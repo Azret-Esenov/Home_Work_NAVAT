@@ -44,7 +44,7 @@ class Queries:
         price INTEGER,
         cover TEXT,
         dishes_id INTEGER,
-        FOREIGN KEY(dishes_id) REFERENCES dishes(id)
+        FOREIGN KEY(dishes_id) REFERENCES categories_of_dishes(id)
     )
     """
 
