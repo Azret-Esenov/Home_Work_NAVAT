@@ -1,8 +1,5 @@
-from bot_config import bot, dp
-from aiogram import types, Router, F
-from aiogram.filters import Command
-import random
-from aiogram.types import FSInputFile
+from bot_config import bot
+from aiogram import types, Router
 from profanity_check import predict_prob
 from bot_config import group
 
