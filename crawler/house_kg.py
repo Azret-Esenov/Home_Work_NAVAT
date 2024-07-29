@@ -20,14 +20,13 @@ class HouseParser:
     def get_house_links(self):
         selector = Selector(text=self.page)
         links = selector.css('div.listings-wrapper div.listing div.left-image a::attr(href)').getall()
-        pprint(links)
         links = list(map(lambda l: f"{HouseParser.BASE_URL}{l}", links))
+        pprint(links)
         return links[:3]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     parser = HouseParser()
     parser.get_page()
     parser.get_page_title()
-    links = parser.get_house_links()
-    pprint(links)
+    parser.get_house_links()
