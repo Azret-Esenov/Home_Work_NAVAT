@@ -5,7 +5,7 @@ from pprint import pprint
 
 class HouseParser:
     MAIN_URL = 'https://www.house.kg/snyat-kvartiru'
-    BASE_URL = 'https://www.house.kg/'
+    BASE_URL = 'https://www.house.kg'
 
     def get_page(self):
         response = requests.get(HouseParser.MAIN_URL)
